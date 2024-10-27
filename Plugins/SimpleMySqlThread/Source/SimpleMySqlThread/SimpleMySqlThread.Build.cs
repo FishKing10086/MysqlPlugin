@@ -41,7 +41,7 @@ public class SimpleMySqlThread : ModuleRules
 		bEnableUndefinedIdentifierWarnings = false;  //关闭未定义标识符的警告
 		PublicDefinitions.Add("NTDDI_WN7SP1");  //添加windows版本为WIN7SP1宏
 		
-		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;  //设置预编译头文件使用模式为"显示或共享"
 
 		//获取插件的根目录的位置，
 		string PluginsDirectory = Path.GetFullPath(Path.Combine(ModuleDirectory, "..", ".."));
